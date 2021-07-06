@@ -8,6 +8,8 @@
     <SwitchTab></SwitchTab>
     <FollowMouse></FollowMouse>
     <HiddenNav></HiddenNav>
+    <BGScroll></BGScroll>
+    <Resize></Resize>
   </div>
 </template>
 
@@ -22,6 +24,8 @@ export default {
     SwitchTab: () => import('@components/behavior/SwitchTab.vue'),
     FollowMouse: () => import('@components/behavior/FollowMouse.vue'),
     HiddenNav: () => import('@components/behavior/HiddenNav.vue'),
+    BGScroll: () => import('@components/behavior/BGScroll.vue'),
+    Resize: () => import('@components/behavior/Resize.vue'),
   }
 }
 </script>

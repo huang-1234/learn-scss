@@ -53,6 +53,10 @@ export default {
         border-bottom-width: 1px;
         max-height: 600px;
       }
+      &:active p {
+        border-bottom-width: 1px;
+        max-height: 600px;
+      }
     }
     h3 {
       padding: 0 20px;

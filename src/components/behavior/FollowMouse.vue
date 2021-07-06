@@ -2,7 +2,7 @@
   <div class="follow-mouse">
     <div class="bruce" data-title="使用:hover描绘鼠标跟随">
       <ul class="mouse-following">
-        <li :v-for="item in items"></li>
+        <li v-for="(item,index) in items" :key="index"> </li>
       </ul>
     </div>
   </div>
