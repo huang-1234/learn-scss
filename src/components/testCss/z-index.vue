@@ -1,0 +1,48 @@
+<template>
+  <div class="z-index">
+    <div class="wrapper">
+      <div class="dashed-box">Dashed box</div>
+      <div class="gold-box">Gold box</div>
+      <div class="green-box">Green box</div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+
+}
+</script>
+
+<style>
+.wrapper {
+  position: relative;
+}
+
+.dashed-box {
+  position: relative;
+  z-index: 1;
+  border: dashed;
+  height: 8em;
+  margin-bottom: 1em;
+  margin-top: 2em;
+}
+.gold-box {
+  position: absolute;
+  z-index: 3; /* put .gold-box above .green-box and .dashed-box */
+  background: gold;
+  width: 80%;
+  left: 60px;
+  top: 3em;
+}
+.green-box {
+  position: absolute;
+  z-index: 2; /* put .green-box above .dashed-box */
+  background: lightgreen;
+  width: 20%;
+  left: 65%;
+  top: -25px;
+  height: 7em;
+  opacity: 0.9;
+}
+</style>
